@@ -241,8 +241,8 @@ export default function Home() {
             <a href="#contact">Kontakt</a>
           </nav>
           <div className="header-contact">
-            <a className="phone-link" href="tel:+381111234567">
-              <Phone size={17} /> <span>011 123 4567</span>
+            <a className="phone-link" href="tel:+381600530557">
+              <Phone size={17} /> <span>060 05 30 557</span>
             </a>
             <a className="button button-red header-cta" href="#booking">
               Zakažite servis
