@@ -1,4 +1,5 @@
 import Image from "next/image";
+import MobileMenu from "./mobile-menu";
 import {
   Activity,
   ArrowRight,
@@ -248,20 +249,7 @@ export default function Home() {
               Zakažite servis
             </a>
           </div>
-          <details className="mobile-menu">
-            <summary aria-label="Otvori navigaciju">
-              <span></span>
-              <span></span>
-              <span></span>
-            </summary>
-            <nav aria-label="Mobilna navigacija">
-              <a href="#services">Usluge</a>
-              <a href="#why-us">O nama</a>
-              <a href="#reviews">Utisci</a>
-              <a href="#booking">Zakažite servis</a>
-              <a href="#contact">Kontakt</a>
-            </nav>
-          </details>
+          <MobileMenu />
         </header>
 
         <div className="hero-content container">
