@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Activity,
   ArrowRight,
@@ -143,15 +144,14 @@ const reviews = [
 function BrandMark() {
   return (
     <a className="brand" href="#top" aria-label="Auto servis, početna strana">
-      <span className="brand-emblem">
-        <Wrench size={22} strokeWidth={2.5} />
-      </span>
-      <span className="brand-copy">
-        <strong>
-          AUTO <b>SERVIS</b>
-        </strong>
-        <small>POUZDAN PARTNER NA PUTU</small>
-      </span>
+      <Image
+        className="brand-logo"
+        src="/logo-016.png"
+        alt="Auto servis 016"
+        width={150}
+        height={100}
+        priority
+      />
     </a>
   );
 }
@@ -591,16 +591,15 @@ export default function Home() {
           </div>
           <div className="footer-contact">
             <h3>KONTAKT I RADNO VREME</h3>
-            <a href="tel:+381111234567">
-              <Phone size={16} /> 011 123 4567
+            <a href="tel:+381600530557">
+              <Phone size={16} /> 060 0530 557
             </a>
             <span>
-              <MapPin size={16} /> Beograd, Srbija
+              <MapPin size={16} /> Ul. Stanoja Glavaša 85, Leskovac
             </span>
             <span>
-              <Clock3 size={16} /> Pon–Pet: 08:00–17:00
+              <Clock3 size={16} /> Pon–Sub: 09:00–17:00
             </span>
-            <span className="footer-saturday">Subota: 08:00–13:00</span>
           </div>
         </div>
         <div className="container footer-bottom">
@@ -611,7 +610,7 @@ export default function Home() {
           <a href="#top">Nazad na vrh ↑</a>
         </div>
         <div className="mobile-bottom-bar">
-          <a href="tel:+381111234567">
+          <a href="tel:+381600530557">
             <Phone size={17} /> Pozovite
           </a>
           <a href="#booking">
